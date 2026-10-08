@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Platform</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0f19;
+      color: #ffffff;
+      min-height: 100vh;
+    }
+
+    header {
+      width: 100%;
+      padding: 20px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #202638;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #7c5cff;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      color: #aeb6ca;
+      text-decoration: none;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 90px 20px 50px;
+    }
+
+    .hero h1 {
+      font-size: clamp(40px, 8vw, 76px);
+      line-height: 1.15;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 span {
+      color: #8b6cff;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #aeb6ca;
+      font-size: 19px;
+      line-height: 1.8;
+    }
+
+    .start-button {
+      display: inline-block;
+      margin-top: 35px;
+      padding: 16px 35px;
+      background: #7c5cff;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    .features {
+      max-width: 1100px;
+      margin: 40px auto 100px;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: #121827;
+      border: 1px solid #252d40;
+      border-radius: 18px;
+      padding: 25px;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #7c5cff;
+    }
+
+    .icon {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #8f99ad;
+      line-height: 1.7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #202638;
+      color: #697388;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 60px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">AI <span>Platform</span></div>
+
+    <nav>
+      <a href="#">خانه</a>
+      <a href="#features">قابلیت‌ها</a>
+      <a href="#">درباره ما</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <h1>
+        آینده هوش مصنوعی<br>
+        <span>اینجاست</span>
+      </h1>
+
+      <p>
+        یک پلتفرم هوش مصنوعی چندمنظوره برای گفتگو،
+        تولید محتوا، برنامه‌نویسی، تصویر، فایل و ابزارهای هوشمند.
+      </p>
+
+      <a class="start-button" href="#">
+        شروع استفاده از AI
+      </a>
+    </section>
+
+    <section class="features" id="features">
+
+      <div class="card">
+        <div class="icon">🤖</div>
+        <h3>چت هوش مصنوعی</h3>
+        <p>
+          گفتگو با هوش مصنوعی و دریافت پاسخ برای پرسش‌های مختلف.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">✍️</div>
+        <h3>تولید محتوا</h3>
+        <p>
+          تولید و اصلاح متن، مقاله، ایده، ترجمه و محتوای خلاقانه.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🖼️</div>
+        <h3>تصویر با AI</h3>
+        <p>
+          ساخت و ویرایش تصاویر با استفاده از هوش مصنوعی.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">💻</div>
+        <h3>برنامه‌نویسی</h3>
+        <p>
+          تولید، توضیح، بررسی و اصلاح کدهای برنامه‌نویسی.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📄</div>
+        <h3>تحلیل فایل</h3>
+        <p>
+          خواندن، خلاصه‌سازی و تحلیل فایل‌ها و اسناد.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🎙️</div>
+        <h3>صدا و متن</h3>
+        <p>
+          ابزارهای هوشمند برای تبدیل صدا و متن.
+        </p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 AI Platform — ساخته شده با هوش مصنوعی
+  </footer>
+
+</body>
+</html>
